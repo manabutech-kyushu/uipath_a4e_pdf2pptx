@@ -1,0 +1,21 @@
+{
+  "DisplayName": "Main",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "PDFファイルパス",
+      "DisplayName": "PDFファイルパス",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "C:\\Users\\manabu.nakamura\\Downloads\\2024.10 UiPath Autopilot for Everyone - Launch FAQ.pdf",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

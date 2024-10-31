@@ -1,0 +1,262 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.PDFファイルパス="C:\Users\manabu.nakamura\Downloads\TEST.pdf" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C47D0F22D10_exportPdf_Create.Bundle;assembly=C47D0F22D10_exportPd.xjyBO45ru3H1eOA1S1WlHiz2" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="PDFファイルパス" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CA16AB988E5_exportPdf_Create.Bundle</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CA16AB988E5_exportPdf_Create.Bundle</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Platform</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C47D0F22D10_exportPdf_Create.Bundle</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>CA16AB988E5_exportPd.Bo5pI29jw3N1jwkHL1zenuQ2</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>C47D0F22D10_exportPd.xjyBO45ru3H1eOA1S1WlHiz2</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1276,1935.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="JobID" />
+      <Variable x:TypeArguments="upr:IResource" Name="Response" />
+      <Variable x:TypeArguments="x:String" Name="ファイル名" />
+      <Variable x:TypeArguments="si:FileInfo" Name="File" />
+      <Variable x:TypeArguments="x:String" Name="ダウンロードパス" />
+      <Variable x:TypeArguments="uiascb:exportPdf_Create" Name="Export" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <isactr:ConnectorActivity Configuration="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" ConnectionId="c2fb0b77-9de9-4ae7-9385-c847d0f22d10" DisplayName="PDF を他の形式でエクスポート" sap:VirtualizedContainerService.HintSize="564.6666666666666,322.6666666666667" sap2010:WorkflowViewState.IdRef="ConnectorActivity_3" UiPathActivityTypeId="428f8342-6abb-34aa-9874-fc6b94bfacde">
+      <isactr:ConnectorActivity.FieldObjects>
+        <isactr:FieldObject Name="_file" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath(PDFファイルパス)]</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="targetFormat" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">pptx</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="ocrLang" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">en-US</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="Jit_exportPdf" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="uiascb:exportPdf_Create">[Export]</OutArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="out_id" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="x:String">[JobID]</OutArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+      </isactr:ConnectorActivity.FieldObjects>
+    </isactr:ConnectorActivity>
+    <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="564.6666666666666,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[ファイル名]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[String.Concat("PDF2PPTX_", Now.ToString("yyyyMMddHHmmss"), "_", System.IO.Path.GetFileNameWithoutExtension(PDFファイルパス), ".pptx")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="564.6666666666666,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[ダウンロードパス]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:RetryScope DisplayName="リトライ スコープ" sap:VirtualizedContainerService.HintSize="564.6666666666666,1168" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="15" RetryInterval="00:00:20">
+      <ui:RetryScope.ActivityBody>
+        <ActivityAction>
+          <Sequence DisplayName="アクション" sap:VirtualizedContainerService.HintSize="522.6666666666666,957.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch DisplayName="トライ キャッチ" sap:VirtualizedContainerService.HintSize="488.6666666666667,897.3333333333334" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch.Try>
+                <ui:GetLastDownloadedFile FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="ダウンロードを待機" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;AppData\Local\Temp&quot;)]" File="[File]" sap:VirtualizedContainerService.HintSize="450,635.3333333333334" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+                  <ui:GetLastDownloadedFile.Body>
+                    <ActivityAction>
+                      <Sequence DisplayName="実行" sap:VirtualizedContainerService.HintSize="416,373.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACr1Vz28TRxT+V6I5O8ZxKRK+ETuhESkxJOSCOEx2X+wh65ntzGzAWEjZXYkogQhEBFUhJYJW9IAIB4SEWug/Mzgt/wVvdtcbx4tBXLjYu+/HzPu+9723PTLLwHNVXXBNGQdJaj2yCFQ6bbriQeoktctXSmSO+4HODT1ynnaA1IjwQVLNBCcl0mDK92g38/QP9v9/eseED0yEv/smemviv0z80AaCciTzk7QaMeGuCQ9M9MxEr0x8y0R/mHg3ewgP+ls7JnwxOOw3E90+3N358H7PRPc/hm8Pt5+Y8FcTPjcboYk3TPTcxK9N/NLE70y8lcb3N//ubz82MRby1ER/mvgF5h7e2ewfPEpy/8UwLGqp69uylZaMt/B9UUi9IF3LyVSJzPCgM4y7LoFqmGg2ZjF0mXqBNTqJ0XdXyc3SUaTo+BKUGo3NzCPRDeEEHeB6ogX8iNlBkpt5h5xDuTPXfax55B5IjCO3zGOvqWQ3RgF4A3sSfyXpFGthk3qkKRTLGtaUrENlFw8kF+GXgElwSU3LAEqpnOaFk9ZWIxcCwEBUj/oZdFu4TSqxAm1JtQlDJTG3oKBcMhNzjYJqRuSVicLq6FjSF7pa/Z7wVpkHyWNhTArq7N/bKc7IGG0fUzUOy70dOy/fKO8fvk7EOOALvE75OlUDgsYRgVJaCPRnN8hFUL7gqsjMMLYCIajbBNq+CV+Z8HfE/uGfh5aB98/67+7iw+Hexn9voiK7R1QIR4OeREKAdo4TcjLtPChNaqvUUwgsrzIDOnivBziH4wWSgk4Vggt2kJWEDahBei9xtsrAtYXhLu74mI7rN798jitNuQM5q0hgjyzjf3rLVLlSruAluMY5OFrIc9BFc8DwoPYkdcUKTOJEK5DrzAGFkWcczdaZ7mZUDFBgl1au4glDom2Ia9wT1Pp+0tpP24u+s6CtMOrUaQMiFmuBn2wRW1pun5biGt46p6GT2TNNYYHZd6VJnTXagmEwp8uVyRXQtFytVE9OVaqny9WpYXRZdWcsLrvAJhaPgOVBx9k59WOObbzI7PYozNlXOFnIv392d4+hamYJTU3sBb6cGDlgnvJWgASg6yq1mVRNoyLXcErrbfRZQjMZLMF1Pe0JZy2h7uYndWYEf70HAAA=" ConnectionId="c2fb0b77-9de9-4ae7-9385-c847d0f22d10" DisplayName="ファイルをダウンロード" sap:VirtualizedContainerService.HintSize="382,313.3333333333333" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="9608827d-8d3b-36e6-94a6-a9ce9f47ad00">
+                          <isactr:ConnectorActivity.FieldObjects>
+                            <isactr:FieldObject Name="operation" Type="FieldArgument">
+                              <isactr:FieldObject.Value>
+                                <InArgument x:TypeArguments="x:String">exportpdf</InArgument>
+                              </isactr:FieldObject.Value>
+                            </isactr:FieldObject>
+                            <isactr:FieldObject Name="id" Type="FieldArgument">
+                              <isactr:FieldObject.Value>
+                                <InArgument x:TypeArguments="x:String">[JobId]</InArgument>
+                              </isactr:FieldObject.Value>
+                            </isactr:FieldObject>
+                            <isactr:FieldObject Name="Response" Type="FieldArgument">
+                              <isactr:FieldObject.Value>
+                                <OutArgument x:TypeArguments="upr:IResource">[Response]</OutArgument>
+                              </isactr:FieldObject.Value>
+                            </isactr:FieldObject>
+                            <isactr:FieldObject Name="fileName" Type="FieldArgument">
+                              <isactr:FieldObject.Value>
+                                <InArgument x:TypeArguments="x:String">[ファイル名]</InArgument>
+                              </isactr:FieldObject.Value>
+                            </isactr:FieldObject>
+                          </isactr:ConnectorActivity.FieldObjects>
+                        </isactr:ConnectorActivity>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:GetLastDownloadedFile.Body>
+                </ui:GetLastDownloadedFile>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="454.6666666666667,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="シーケンス" sap:VirtualizedContainerService.HintSize="416,232" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <WriteLine DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="382,124" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="エラー発生！リトライします" />
+                      <Rethrow DisplayName="再スロー" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+                    </Sequence>
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+          </Sequence>
+        </ActivityAction>
+      </ui:RetryScope.ActivityBody>
+      <ui:RetryScope.Condition>
+        <ActivityFunc x:TypeArguments="x:Boolean" />
+      </ui:RetryScope.Condition>
+    </ui:RetryScope>
+    <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[ダウンロードパス]" DisplayName="ファイルを移動" sap:VirtualizedContainerService.HintSize="564.6666666666666,187.33333333333334" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[File.FullName]" />
+  </Sequence>
+</Activity>

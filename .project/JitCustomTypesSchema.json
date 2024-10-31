@@ -1,0 +1,113 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "yVY0shHbld0iMwfh1mHrYwjrTeP2r7LMgJdPwsLQDm4n22Z1XtJG1zP5/fmFecYHz2/t5RXXn9TJHaQe+EA4Ow==",
+        "bundleName": "CA16AB988E5_exportPdf_Create",
+        "entitiesBundle": {
+          "Types": {
+            "exportPdf_Create": {
+              "name": "exportPdf_Create",
+              "properties": [
+                {
+                  "name": "id",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "attributes": {
+                    "values": [
+                      {
+                        "Type": {
+                          "ClrType": "System.ComponentModel.CategoryAttribute, System.ComponentModel.Primitives"
+                        },
+                        "constructorArguments": [
+                          {
+                            "Value": "\"Simplified\"",
+                            "type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "namedArguments": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "location",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.CA16AB988E5_exportPdf_Create",
+        "hash": "eVZZMHNoSGJsZDBpTXdmaDFtSHJZd2pyVGVQMnI3TE1nSmRQd3NMUURtNG4yMloxWHRKRzF6UDUvZm1GZWNZSHoyL3Q1UlhYbjlUSkhhUWUrRUE0T3c9PQ",
+        "assemblyName": "CA16AB988E5_exportPd.Bo5pI29jw3N1jwkHL1zenuQ2"
+      }
+    },
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "yVY0shHbld0iMwfh1mHrYwjrTeP2r7LMgJdPwsLQDm4n22Z1XtJG1zP5/fmFecYHz2/t5RXXn9TJHaQe+EA4Ow==",
+        "bundleName": "C47D0F22D10_exportPdf_Create",
+        "entitiesBundle": {
+          "Types": {
+            "exportPdf_Create": {
+              "name": "exportPdf_Create",
+              "properties": [
+                {
+                  "name": "id",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "attributes": {
+                    "values": [
+                      {
+                        "Type": {
+                          "ClrType": "System.ComponentModel.CategoryAttribute, System.ComponentModel.Primitives"
+                        },
+                        "constructorArguments": [
+                          {
+                            "Value": "\"Simplified\"",
+                            "type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "namedArguments": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "location",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.C47D0F22D10_exportPdf_Create",
+        "hash": "eVZZMHNoSGJsZDBpTXdmaDFtSHJZd2pyVGVQMnI3TE1nSmRQd3NMUURtNG4yMloxWHRKRzF6UDUvZm1GZWNZSHoyL3Q1UlhYbjlUSkhhUWUrRUE0T3c9PQ",
+        "assemblyName": "C47D0F22D10_exportPd.xjyBO45ru3H1eOA1S1WlHiz2"
+      }
+    }
+  ]
+}

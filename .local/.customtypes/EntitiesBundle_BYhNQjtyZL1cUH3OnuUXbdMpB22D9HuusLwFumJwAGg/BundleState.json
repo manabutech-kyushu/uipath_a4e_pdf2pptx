@@ -1,0 +1,22 @@
+{
+  "assemblyStates": {
+    "CA16AB988E5_exportPd.Bo5pI29jw3N1jwkHL1zenuQ2": {
+      "namespace": "UiPath.IntegrationService.Activities.SWEntities.CA16AB988E5_exportPdf_Create.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.CA16AB988E5_exportPdf_Create",
+        "hash": "eVZZMHNoSGJsZDBpTXdmaDFtSHJZd2pyVGVQMnI3TE1nSmRQd3NMUURtNG4yMloxWHRKRzF6UDUvZm1GZWNZSHoyL3Q1UlhYbjlUSkhhUWUrRUE0T3c9PQ",
+        "assemblyName": "CA16AB988E5_exportPd.Bo5pI29jw3N1jwkHL1zenuQ2"
+      }
+    },
+    "C47D0F22D10_exportPd.xjyBO45ru3H1eOA1S1WlHiz2": {
+      "namespace": "UiPath.IntegrationService.Activities.SWEntities.C47D0F22D10_exportPdf_Create.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.C47D0F22D10_exportPdf_Create",
+        "hash": "eVZZMHNoSGJsZDBpTXdmaDFtSHJZd2pyVGVQMnI3TE1nSmRQd3NMUURtNG4yMloxWHRKRzF6UDUvZm1GZWNZSHoyL3Q1UlhYbjlUSkhhUWUrRUE0T3c9PQ",
+        "assemblyName": "C47D0F22D10_exportPd.xjyBO45ru3H1eOA1S1WlHiz2"
+      }
+    }
+  }
+}
